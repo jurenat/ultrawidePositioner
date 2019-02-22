@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Ultrawide screen positioner
+Comment=Move windows in useful positions in a ultrawide monitor
+Icon=preferences-system-windows-script-test
+
+X-Plasma-API=javascript
+X-Plasma-MainScript=code/til3r.js
+
+X-KDE-PluginInfo-Author=Tomas Jurena
+X-KDE-PluginInfo-Name=ultrawidepositioner
+X-KDE-PluginInfo-Version=2.0
+
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-ServiceTypes=KWin/Script
+Type=Service
