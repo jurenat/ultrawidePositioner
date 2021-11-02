@@ -3,7 +3,7 @@ var activeClient;
 
 for (var i=0; i<clients.length; i++) {
     if (clients[i].active) {
-      activeClient = clients[i];      
+      activeClient = clients[i];
     }
 }
 
@@ -89,7 +89,7 @@ var resizeAndMove = function(column, row){
       wide = 2;
   }
 
-  var workGeo = workspace.clientArea(KWin.WorkArea, 1, 1);
+  var workGeo = workspace.clientArea(KWin.FullScreenArea, workspace.activeScreen, workspace.currentDesktop);
   var geo = activeClient.geometry;
   geo.x = workGeo.x + (column - 1) * workGeo.width / 4;
   geo.width = wide * workGeo.width / 4;
